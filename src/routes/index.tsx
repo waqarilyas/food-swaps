@@ -6,6 +6,7 @@ import AppIcon from '../components/Icon';
 import AppInput from '../components/Input';
 import {RootState} from '../store';
 import {setAuthToken} from '../store/reducers/userSlice';
+import {THEME} from '../theme';
 
 const Routes = () => {
   const dispatch = useDispatch();
@@ -20,11 +21,14 @@ const Routes = () => {
           alignItems: 'center',
           justifyContent: 'center',
         }}>
-        <Text>{data}</Text>
-        <Button
-          title="store data"
-          onPress={() => dispatch(setAuthToken(null))}
-        />
+        <Text>Hello from new font</Text>
+        <Text
+          style={{
+            fontFamily: THEME.FONTS.TYPE.BOLD,
+          }}>
+          Hello from new font
+        </Text>
+
         <AppIcon name="home" />
 
         <AppInput />

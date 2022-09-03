@@ -21,15 +21,12 @@ const THEME = {
       XXXXSMALL: RF(10),
     },
     TYPE: {
-      LIGHT: 'Montserrat-Light',
-      REGULAR: 'Montserrat-Regular',
-      MEDIUM: 'Montserrat-Medium',
-      SEMIBOLD: 'Montserrat-SemiBold',
-      BOLD: 'Montserrat-Bold',
-      TOKENS:
-        Platform.OS == 'ios'
-          ? 'TokenSymbols-Regular'
-          : 'FONT-TokenSymbols-Regular',
+      LIGHT: 'Nunito-Light',
+      EXTRA_LIGHT: 'Nunito-ExtraLight',
+      REGULAR: 'Nunito-Regular',
+      MEDIUM: 'Nunito-Medium',
+      SEMIBOLD: 'Nunito-SemiBold',
+      BOLD: 'Nunito-Bold',
     },
   },
   MARGIN: {
