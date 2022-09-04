@@ -17,7 +17,7 @@ const THEME = {
       SMALL: RF(14),
       XSMALL: RF(13),
       XXSMALL: RF(12),
-      XXXSMALL: RF(11),
+      XXXSMALL: RF(11.2),
       XXXXSMALL: RF(10),
     },
     TYPE: {
@@ -31,9 +31,17 @@ const THEME = {
   },
   MARGIN: {
     CARD_LISTING: RF(4),
+    INPUT_INNER_TOP_MARGIN: RF(5),
+    INPUT_TOP_MARGIN: RF(10),
+    SOCIAL_TOP: RF(10),
   },
   PADDING: {
     CARD_PADDING: RF(4),
+    INPUT_PADDING_BOTTOM: RF(5),
+    BUTTON_INNER: RF(11),
+  },
+  RADIUS: {
+    BUTTON: RF(10),
   },
 };
 

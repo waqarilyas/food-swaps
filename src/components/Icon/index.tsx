@@ -9,10 +9,12 @@ interface IIcon extends IconProps {
 }
 
 const AppIcon = (props: IIcon) => {
+  const iconName = Icons[props.name];
+
   return (
     <Ionicon
       {...props}
-      name={props.name}
+      name={iconName}
       size={props.size ? props.size : THEME.FONTS.SIZE.LARGE}
     />
   );

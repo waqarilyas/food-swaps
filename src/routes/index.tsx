@@ -1,18 +1,12 @@
 import {NavigationContainer} from '@react-navigation/native';
 import * as React from 'react';
-import {Button, Text, View} from 'react-native';
-import {useDispatch, useSelector} from 'react-redux';
-import AppIcon from '../components/Icon';
+import {Text, View} from 'react-native';
+import PrimaryButton from '../components/Button';
 import AppInput from '../components/Input';
-import {RootState} from '../store';
-import {setAuthToken} from '../store/reducers/userSlice';
-import {THEME} from '../theme';
+import SocialButton from '../components/SocialButton';
+import AppText from '../components/Text';
 
 const Routes = () => {
-  const dispatch = useDispatch();
-
-  const data = useSelector((state: RootState) => state.user.authToken);
-
   return (
     <NavigationContainer>
       <View
@@ -22,16 +16,18 @@ const Routes = () => {
           justifyContent: 'center',
         }}>
         <Text>Hello from new font</Text>
-        <Text
-          style={{
-            fontFamily: THEME.FONTS.TYPE.BOLD,
-          }}>
-          Hello from new font
-        </Text>
+        <AppText variant="heading-small">Signup to continue</AppText>
 
-        <AppIcon name="home" />
+        <View style={{width: '90%'}}>
+          <AppInput label="Email Address" />
+          <AppInput label="Password" secureTextEntry />
 
-        <AppInput />
+          <SocialButton variant="apple" />
+          <SocialButton variant="facebook" />
+          <SocialButton variant="email" />
+
+          <PrimaryButton title="Click me" variant="primary" isForward />
+        </View>
       </View>
     </NavigationContainer>
   );

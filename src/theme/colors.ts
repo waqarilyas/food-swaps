@@ -8,4 +8,6 @@ export const colors = {
   secondary_blue: '#d4e0ff',
   secondary_green: '#d0f1eb',
   secondary_pink: '#fdcad3',
+  text_grey: 'rgba(0,0,0,0.6)',
+  blue: '#1f99ed',
 };

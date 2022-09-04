@@ -36,4 +36,7 @@ export const Icons = {
   caret_backward: 'ios-caret-back-outline',
   eye: 'ios-eye',
   eye_off: 'ios-eye-off',
+  apple_filled: 'ios-logo-apple',
+  arrow_forward: 'ios-arrow-forward',
+  arrow_backward: 'ios-arrow-back',
 };
